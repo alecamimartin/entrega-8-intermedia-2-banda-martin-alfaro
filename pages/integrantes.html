@@ -16,51 +16,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body id="bodyMembers">
 
     <header id="header">
-
         <div class="audio">  <!-- color lista de reproduccion -->
             <audio controls="controls" autoplay="autoplay" loop src="../audio/bmth-parasite eve.mp3"></audio>
         </div>
 
         <br>
 
-        <div class="search">
-            <input type="text" placeholder="Realice su búsqueda">
-        </div>
-        
-        <br>
+        <nav class="navbar bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">BRING ME THE HORIZON</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="galeria.html">GALERÍA</a>
-                </li>
-                <li>
-                    <a href="discografia.html">DISCOGRAFÍA</a>
-                </li>
-                <li>
-                    <a href="integrantes.html">INTEGRANTES</a>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+                    <div class="offcanvas-header text-bg-dark">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENÚ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+
+                    <div class="offcanvas-body bg-danger">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">GALERÍA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="discografia.html">DISCOGRAFÍA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="integrantes.html">INTEGRANTES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 text-bg-light" type="search" placeholder="Realice su búsqueda" aria-label="Search">
+                        <button class="btn btn-outline-success text-bg-dark" type="submit">Buscar</button></form>
+                </div>
+            </div>
         </nav>
     </header>
 
     <hr>
 
-        <div id="members">
-            <h1 class="bigTitleMembers"> NUESTROS INTEGRANTES </h1>
+    <section id="members">
+
+        <div class="bigTitleMembers">
+            <h1 > NUESTROS INTEGRANTES </h1>
         </div>
 
         <br>
+
+
 
         <div id="membersOliver">
             
@@ -252,33 +279,51 @@
                 <img src="../img/integrantes-jordan-hijos.jpg" alt="jordan-hijos"></p>
                 </p>
         </div>
+        
+    </section>
 
     <hr>
             
     <footer id="footer">
 
-        <div class="quotes">
-            <p> "Can you hear the silence? Can you see the dark? Can you fix the broken? Can you feel, can you feel my heart?" </p>
+        <div class="footerLogo">
+            <a href="../index.html"><img src="../img/logo-bmth.jpg" alt="bmth-render"></a>
+        </div>
+
+        <br>
+
+        <div class="history">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet quasi atque accusantium doloribus tempora assumenda at temporibus suscipit? Fuga sed fugit commodi! Molestias quos autem, ullam in quo perspiciatis? Nihil dolorum amet sint cumque blanditiis aliquid atque porro optio?</p>
         </div>
 
         <br>
 
         <div class="links">
             
-            <a href="https://www.facebook.com/bmthofficial" target="_blank">
-                <img src="../img/icon-facebook.png" alt="facebook-icon" width="25">
-            </a>
+            <div>
+                <a href="https://www.facebook.com/bmthofficial" target="_blank">
+                    <img src="../img/icon-facebook.png" alt="facebook-icon" width="25">
+                </a>
+            </div>
 
-            <a href="https://www.instagram.com/bmthofficial" target="_blank">
-                <img src="../img/icon-instagram.png" alt="instagram-icon" width="25">
-            </a>
+            <div>
+                <a href="https://www.instagram.com/bmthofficial" target="_blank">
+                    <img src="../img/icon-instagram.png" alt="instagram-icon" width="25">
+                </a>
+            </div>
 
-            <a href="https://www.youtube.com/channel/UCAayZDDj3uom0QpSJiwLoUw" target="_blank">
-                <img src="../img/icon-youtube.png" alt="youtube-icon" width="25">
-            </a>
+            <div>
+                <a href="https://www.youtube.com/channel/UCAayZDDj3uom0QpSJiwLoUw" target="_blank">
+                    <img src="../img/icon-youtube.png" alt="youtube-icon" width="25">
+                </a>
+            </div>
+
         </div>
 
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 </body>
 </html>

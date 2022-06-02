@@ -133,7 +133,7 @@
         display: grid;
 
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(40, 150px);
+        grid-template-rows: repeat(17, 150px);
 
         grid-column-gap: 2px;
         grid-row-gap: 2px;
@@ -155,29 +155,6 @@
         "discographyComplete discographyComplete discographyComplete discographyComplete"
         "discographyComplete discographyComplete discographyComplete discographyComplete"
         "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
-        "discographyComplete discographyComplete discographyComplete discographyComplete"
         "footer footer footer footer";
 
         align-content: stretch;
@@ -185,16 +162,14 @@
 
 
     #discography {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: discography;
     }
 
     #discographyComplete {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: discographyComplete;
+
+        justify-self: center;
     }
-
-
 
     /* --------------------LAYOUT/MEMBERS------------------- */
 
@@ -268,36 +243,29 @@
 
 
     #members {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: members;
 
     }
 
     #membersOliver {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: membersOliver;
     }
 
     #membersMattNicholls {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: membersMattNicholls;
     }
 
     #membersLee {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: membersLee;
     }
 
     #membersMattKean {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: membersMattKean;
     }
 
     #membersJordan {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: membersJordan;
     }
-
 
 
     /* --------------------LAYOUT/CONTACT------------------- */
@@ -310,14 +278,13 @@
         display: grid;
 
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(8, 150px);
+        grid-template-rows: repeat(7, 150px);
 
         grid-column-gap: 2px;
         grid-row-gap: 2px;
 
         grid-template-areas: 
         "header header header header"
-        "contactUs contactUs contactUs contactUs"
         "contactUs contactUs contactUs contactUs"
         "boxForm boxForm boxForm boxForm"
         "boxForm boxForm boxForm boxForm"
@@ -329,14 +296,12 @@
     }
 
     #contactUs {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: contactUs;
-
     }
 
     #boxForm {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: boxForm;
+        justify-self: center;
     }
 
     /* --------------------ITEMS/HEADER------------------- */
@@ -355,7 +320,7 @@
     }
 
 
-    input:focus {
+    #header input:focus {
         background-image: linear-gradient(to top, red, orange);
     }
 
@@ -457,33 +422,20 @@
     .bigTitleDiscography {
         color: black;
         font-family: 'Permanent Marker', cursive;
-        font-size: 45px;
+        font-size: 60px;
         text-align: center;
-
-        position: relative;
-        top: 30px;
-        left: 0px;
     }
 
-    .titleAlbumStudio, .titleSingleEP, .titleLive, .titleCollaborations {
+    .titleAlbumStudio, .titleSingleEP, .titleLive {
         color: black;
         font-family: 'Permanent Marker', cursive;
-        font-size: 30px;
+        font-size: 50px;
         text-align: center;
     }
 
-    .discos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .discos a img{
-        width: 300px;
-        height: 300px;
-        border: 2px solid violet;
+    #discographyComplete img {
+        width: 550px;
+        height: 550px;
     }
 
     /* --------------------ITEMS/MEMBERS-------------------- */
@@ -642,25 +594,19 @@
     .titleContacUs {
         color: black;
         font-family: 'Permanent Marker', cursive;
-        font-size: 50px;
+        font-size: 60px;
         text-align: center;
     }
     
     .descriptionContactUs {
         color: black;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 25px;
+        font-size: 15px;
         text-align: center;
-
-        position: relative;
-        top: 50px;
     }
 
-    .form {
-        width: 100%;
-        height: 550px;
+    form {
         text-align: center;
-        line-height: 30px; 
     }
 
 }

@@ -16,248 +16,392 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body id="bodyDiscography">
 
     <header id="header">
-
         <div class="audio">  <!-- color lista de reproduccion -->
             <audio controls="controls" autoplay="autoplay" loop src="../audio/bmth-parasite eve.mp3"></audio>
         </div>
 
         <br>
 
-        <div class="search">
-            <input type="text" placeholder="Realice su búsqueda">
-        </div>
-        
-        <br>
+        <nav class="navbar bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">BRING ME THE HORIZON</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="galeria.html">GALERÍA</a>
-                </li>
-                <li>
-                    <a href="discografia.html">DISCOGRAFÍA</a>
-                </li>
-                <li>
-                    <a href="integrantes.html">INTEGRANTES</a>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+                    <div class="offcanvas-header text-bg-dark">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENÚ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+
+                    <div class="offcanvas-body bg-danger">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">GALERÍA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="discografia.html">DISCOGRAFÍA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="integrantes.html">INTEGRANTES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 text-bg-light" type="search" placeholder="Realice su búsqueda" aria-label="Search">
+                        <button class="btn btn-outline-success text-bg-dark" type="submit">Buscar</button></form>
+                </div>
+            </div>
         </nav>
     </header>
 
+
     <hr>
 
-        <div id="discography">
-            <h1 class="bigTitleDiscography"> <em> DISCOGRAFÍA </em> </h1>
+    <div id="discography">
+        <h1 class="bigTitleDiscography"> <em> DISCOGRAFÍA </em> </h1>
+    </div>
+
+    <section id="discographyComplete">
+
+        <div class="albums">
+
+            <div class="titleAlbumStudio">
+                <h3>ALBUMES DE ESTUDIO</h3>
+            </div>
+    
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" col-	xl-8 col-sm-4>
+    
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                </div>
+    
+                <div class="carousel-inner">
+    
+                    <div class="carousel-item active">
+                        <a href=https://open.spotify.com/album/0e1WaSNDZnoPixaxDNdWo4?si=AwbmqUM3QqO7VDNmkCj0mQ" target="_blank">
+                            <img src="../img/bmth-disc-post-human-survival-horror.jpg" class="d-block w-100" alt="bmth-post-human-survival-horror"></a>
+                        </a>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <a href="https://open.spotify.com/album/6yC6aLzX5knhWpKDidwxft?si=-2QsU1MoSs2rO_Cvhdtm5Q" target="_blank">
+                            <img src="../img/bmth-disc-music-to-listen-to.jpg" class="d-block w-100"  alt="bmth-music-to-listen-to"></a>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <a href="https://open.spotify.com/album/04mkS7FooK8fRbB626T9NR?si=3NcAgjhsQ6KkE1GefshUdA" target="_blank">
+                            <img src="../img/bmth-disc-amo.jpg" class="d-block w-100" alt="bmth-amo"></a>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <a href="https://open.spotify.com/album/7FqHuAvmREiIwVXVpZ9ooP?si=D6wBX51jTCSLnmp6a-xAlA" target="_blank">
+                            <img src="../img/bmth-disc-thats-the-spirit.jpg" class="d-block w-100" alt="bmth-thats-the-spirit"></a>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <a href="https://open.spotify.com/album/6IYPmM3xsOPL2XPSvf1ZAz?si=0nzO6WP3SOK17yzKFIngug" target="_blank">
+                            <img src="../img/bmth-disc-sempiternal.jpg" class="d-block w-100" alt="bmth-sempiternal"></a>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <a href="https://open.spotify.com/album/2BxDLAnw4QPcs8U4r1StrI?si=62do6umPQaG8F2YpBXUeQA" target="_blank">
+                            <img src="../img/bmth-disc-there-is-a-hell.jpg" class="d-block w-100" alt="bmth-there-is-a-hell"></a>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <a href="https://open.spotify.com/album/2HN58gcFvTkDSdes9K5oAr?si=8tkvH-iwQNCmX6itL0hGKg" target="_blank">
+                            <img src="../img/bmth-disc-suicide-season-deluxe-edition.jpg" class="d-block w-100" alt="bmth-suicide-season-deluxe-edition"></a>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <a href="https://open.spotify.com/album/6bdSj3D5soQXZqlxSn5ZQr?si=M6H23N3jRiGDmHy4GqB6Vw" target="_blank">
+                            <img src="../img/bmth-disc-suicide-season.jpg" class="d-block w-100" alt="bmth-suicide-season"></a>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <a href="https://open.spotify.com/album/718kbp0LCMGFNG3JuEu0Th?si=MzpeZcnGQFWFvYE6sWpseQ" target="_blank">
+                            <img src="../img/bmth-disc-count-your-blessing.jpg" class="d-block w-100" alt="bmth-count-your-blessing"></a>
+                    </div>
+    
+                </div>
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </div>
 
-        <section id="discographyComplete">
-            
-            <h3 class="titleAlbumStudio">ALBÚMNES DE ESTUDIO</h3>    
-                
-            <br>
-        
-            <div class="discos">
-                <a href=https://open.spotify.com/album/0e1WaSNDZnoPixaxDNdWo4?si=AwbmqUM3QqO7VDNmkCj0mQ" target="_blank">
-                    <img src="../img/bmth-disc-post-human-survival-horror.jpg" alt="bmth-post-human-survival-horror"></a>
-                    
-                <a href="https://open.spotify.com/album/6yC6aLzX5knhWpKDidwxft?si=-2QsU1MoSs2rO_Cvhdtm5Q" target="_blank">
-                    <img src="../img/bmth-disc-music-to-listen-to.jpg" alt="bmth-music-to-listen-to"></a>
-                    
-                <a href="https://open.spotify.com/album/04mkS7FooK8fRbB626T9NR?si=3NcAgjhsQ6KkE1GefshUdA" target="_blank">
-                    <img src="../img/bmth-disc-amo.jpg" alt="bmth-amo"></a>
-                    
-                <a href="https://open.spotify.com/album/7FqHuAvmREiIwVXVpZ9ooP?si=D6wBX51jTCSLnmp6a-xAlA" target="_blank">
-                    <img src="../img/bmth-disc-thats-the-spirit.jpg" alt="bmth-thats-the-spirit"></a>
-                    
-                <a href="https://open.spotify.com/album/6IYPmM3xsOPL2XPSvf1ZAz?si=0nzO6WP3SOK17yzKFIngug" target="_blank">
-                    <img src="../img/bmth-disc-sempiternal.jpg" alt="bmth-sempiternal"></a>
-                    
-                <a href="https://open.spotify.com/album/2BxDLAnw4QPcs8U4r1StrI?si=62do6umPQaG8F2YpBXUeQA" target="_blank">
-                    <img src="../img/bmth-disc-there-is-a-hell.jpg" alt="bmth-there-is-a-hell"></a>
-                    
-                <a href="https://open.spotify.com/album/2HN58gcFvTkDSdes9K5oAr?si=8tkvH-iwQNCmX6itL0hGKg" target="_blank">
-                    <img src="../img/bmth-disc-suicide-season-deluxe-edition.jpg" alt="bmth-suicide-season-deluxe-edition"></a>
-                    
-                <a href="https://open.spotify.com/album/6bdSj3D5soQXZqlxSn5ZQr?si=M6H23N3jRiGDmHy4GqB6Vw" target="_blank">
-                    <img src="../img/bmth-disc-suicide-season.jpg" alt="bmth-suicide-season"></a>
-                    
-                <a href="https://open.spotify.com/album/718kbp0LCMGFNG3JuEu0Th?si=MzpeZcnGQFWFvYE6sWpseQ" target="_blank">
-                    <img src="../img/bmth-disc-count-your-blessing.jpg" alt="bmth-count-your-blessing"></a>
-            </div>
-            
-            <br>
-            
-            <h3 class="titleSingleEP">SENCILLOS Y EP</h3>
-            
-            <br>
-            
-            <div class="discos">
-                <a href="https://open.spotify.com/album/7tcd0KU4YjcAT9jaP8ebs6?si=LIPz9EOuRRq3uU6c-45lsQ" target="_blank">
-                    <img src="../img/bmth-disc-bad-life.jpg" alt="bmth-bad-life"></a>
-                    
-                <a href="https://open.spotify.com/album/74K2vGYMdCCO29n4s4Y41h?si=Pz9gvDWFQ3WFm12z51VaGw" target="_blank">
-                    <img src="../img/bmth-disc-fallout.jpg" alt="bmth-fallout"></a>
-                    
-                <a href="https://open.spotify.com/album/6YaoDGq5SqvjU4D9oMFj2d?si=ngz-8wYaSemjuTvG4eglEg" target="_blank">
-                    <img src="../img/bmth-disc-bad-habits.jpg" alt="bmth-bad-habits"></a>
-                    
-                <a href="https://open.spotify.com/album/3ZgYohcrHNEN6kEDRhUmya?si=5MKDdi3QQLqnOUB_9Uws3w" target="_blank">
-                    <img src="../img/bmth-disc-moon-over-the-castle.jpg" alt="bmth-moon-over-the-castle"></a>
-                    
-                <a href="https://open.spotify.com/album/5BPAG0wIJVwNpqSqOQ6P6H?si=JNKX57anQmyxZwfDiWw97Q" target="_blank">
-                    <img src="../img/bmth-disc-die4u-six impala.jpg" alt="bmth-die4u-six-impala"></a>
-                    
-                <a href="https://open.spotify.com/album/0ZjZyPw9pHhOahynV7tSaW?si=7UQLf6gET-muzefQSq0Bmg" target="_blank">
-                    <img src="../img/bmth-disc-vampir.jpg" alt="bmth-vampir"></a>
-                    
-                <a href="https://open.spotify.com/album/41xx4p0Q1MhE2Bnfkeo6b0?si=UQdukSb0QhWkYobsPkXVlg" target="_blank">
-                    <img src="../img/bmth-disc-lets-get-the-party-started.jpg" alt="bmth-lets-get-the-party-started"></a>
-                    
-                <a href="https://open.spotify.com/album/4L4TlrXB94790rqWBprweP?si=siRuNUGfTHSPOCuzYxQv5A" target="_blank">
-                    <img src="../img/bmth-disc-die4u.jpg" alt="bmth-die4u"></a>
-                    
-                <a href="https://open.spotify.com/album/5T2HtXj1rvReE0gAAMNx53?si=wG6_d6pVQb28WbJyEgSGvA" target="_blank">
-                    <img src="../img/bmth-disc-no-more-friends.jpg" alt="bmth-no-more-friends"></a>
-                    
-                <a href="https://open.spotify.com/album/1NoegGXKwW97ZQB9ctl2Tw?si=_Emj0TpJSSqE-v1FQwtruQ" target="_blank">
-                    <img src="../img/bmth-disc-cyfmh-remix.jpg" alt="bmth-cyfmh-remix"></a>
-                    
-                <a href="https://open.spotify.com/album/4U4nKoTy4lsQlUoaGqg8U4?si=ADIAs15MTiGYetE0Wy9nCQ" target="_blank">
-                    <img src="../img/bmth-disc-teardrops.jpg" alt="bmth-teardrops"></a>
-                    
-                <a href="https://open.spotify.com/album/5J7qci2JWfVtHdnhzCupbJ?si=H_cXQJEeThKzdY9WLT8-Fg" target="_blank">
-                    <img src="../img/bmth-disc-obey.jpg" alt="bmth-obey"></a>
-                    
-                <a href="https://open.spotify.com/album/5PMPY8a70DCHnQic13XueL?si=KR6XsxbPRqqYytR82yuG0A" target="_blank">
-                    <img src="../img/bmth-disc-parasite-eve.jpg" alt="bmth-parasite-eve"></a>
-                    
-                <a href="https://open.spotify.com/album/4IojpVltvdlDvlQ6uC6iVW?si=SskgwMt5RmG5RGO5Ux_o0Q" target="_blank">
-                    <img src="../img/bmth-disc-ludens.jpg" alt="bmth-ludens"></a>
-                    
-                <a href="https://open.spotify.com/album/2442fVHcs5gEuDXgRHespx?si=pG0n8-cvR9-S1AWkYsWWBg" target="_blank">
-                    <img src="../img/bmth-disc-sugar-honey-ice-and-tea-edit.jpg" alt="bmth-sugar-honey-ice-and-tea-edit"></a>
-                    
-                <a href="https://open.spotify.com/album/32iqkyCIOKogzuExLw1WTQ?si=BO_KrbUSTa2RBvUImY5SNg" target="_blank">
-                    <img src="../img/bmth-disc-spotify-singles.jpg" alt="bmth-spotify-singles"></a>
-                    
-                <a href="https://open.spotify.com/album/5r53iZXWegi3syD5tzRAml?si=cDKq7VH-T42rxL7BKXMuoQ" target="_blank">
-                    <img src="../img/bmth-disc-mother-tongue-sub-focus.jpg" alt="bmth-mother-tongue-sub-focus"></a>
-                    
-                <a href="https://open.spotify.com/album/1Dmf5LOn4FqRfXgEmtCHOU?si=6f0Cv0JxQ7u_5N8_T5ZKPw" target="_blank">
-                    <img src="../img/bmth-disc-nihilist-blue.jpg" alt="bmth-nihilist-blue"></a>
-                    
-                <a href="https://open.spotify.com/album/4sww0AHv77ypz8Xs1GAsgO?si=LfZOwvwlQVmNIu_dug9NLw" target="_blank">
-                    <img src="../img/bmth-disc-mother-tongue.jpg" alt="bmth-mother-tongue"></a>
-                    
-                <a href="https://open.spotify.com/album/1KGKzyp51fVDw8VsM73tGu?si=K-0zgG5IRdaG_DTlQgNtBg" target="_blank">
-                    <img src="../img/bmth-disc-medicine.jpg" alt="bmth-medicine"></a>
-                    
-                <a href="https://open.spotify.com/album/1uunFc8ZPthd7kFXaf393T?si=JinRH7FbToaJu9NpA82szw" target="_blank">
-                    <img src="../img/bmth-disc-wonderful-life.jpg" alt="bmth-wonderful-life"></a>
-                    
-                <a href="https://open.spotify.com/album/5V4SjUDKVzGxIJDxIHfOZ3?si=wSgcMxUDTzulFnP-hhSp8w" target="_blank">
-                    <img src="../img/bmth-disc-mantra.jpg" alt="bmth-mantra"></a>
-                    
-                <a href="https://open.spotify.com/album/4BfKAngRHKBRsg1XmEfM35?si=uSq0gWptRQG9sVB89pVBtA" target="_blank">
-                    <img src="../img/bmth-disc-oh-no-radio-edit.jpg" alt="bmth-oh-no-radio-edit"></a>
-                    
-                <a href="https://open.spotify.com/album/2HjtGG1LVyrN8yrNmt78Py?si=6naJNQpLT7uz1x2-Himy2Q" target="_blank">
-                    <img src="../img/bmth-disc-drown-live-from-maida-vale.jpg" alt="bmth-drown-live-from-maida-vale"></a>
-                    
-                <a href="https://open.spotify.com/album/7FCyRfif61F6ZCwOC14Rwi?si=hYW585KVRkeNtyW_EyTRBg" target="_blank">
-                    <img src="../img/bmth-disc-drown.jpg" alt="bmth-drown"></a>
-                    
-                <a href="https://open.spotify.com/album/6eEJ5N9lf9ajwr5LBprfuD?si=gvbYF5FFTRSFPY2XF6hNag" target="_blank">
-                    <img src="../img/bmth-disc-this-is-what.jpg" alt="bmth-this-is-what"></a>
-                    
-                <a href="https://open.spotify.com/album/1C4aOSd7ekrK5BBcatimCN?si=6JCmmjz3TsWZJvdBm9Ygww" target="_blank">
-                    <img src="../img/bmth-disc-cyfmh.jpg" alt="bmth-cyfmh"></a>
-                    
-                <a href="https://open.spotify.com/album/0x5yvzhPUm2b3yQYzPPZrZ?si=-2iz3sEFTPaniDo_lJ8LLw" target="_blank">
-                    <img src="../img/bmth-disc-sleepwalking.jpg" alt="bmth-sleepwalking"></a>
-                    
-                <a href="https://open.spotify.com/album/2DokI5ekvgSs7eXwrbuXUo?si=hmG1-TSgT5GUbMRHXQcBaA" target="_blank">
-                    <img src="../img/bmth-disc-shadow-moses.jpg" alt="bmth-shadow-moses"></a>
-            </div>
-        
-            <br>
-            
-            <h3 class="titleLive">ALBÚMNES EN VIVO</h3>
-            
-            <br>
-            
-            <div class="discos">
-                <a href="https://open.spotify.com/album/5dH7StOKoPnNEbWh86MwFz?si=sAspWozIRwG9IXHpg4GRBg" target="_blank">
-                    <img src="../img/bmth-disc-live-at-the-royal-albert-hall.jpg" alt="bmth-live-at-the-royal-albert-hall"></a>
+        <br> <hr>
+
+        <div class="singlesEP">
+
+            <div class="titleSingleEP">
+                <h3>SENCILLOS Y EP</h3>
             </div>
 
-            <br>
-            
-            <h3 class="titleCollaborations">APARAICIONES EN...</h3>
-            
-            <br>
-            
-            <div class="discos">
-                <a href="https://open.spotify.com/album/3sKZHtQoq3tPtkXbT8PJAc?si=xFIv3T2oTyO85GKeRGjuBg" target="_blank">
-                    <img src="../img/bmth-disc-maybe.jpg" alt="bmth-maybe"></a>
-                
-                <a href="https://open.spotify.com/album/0jWtiXlIT1bKH9qrAuKtCj?si=cJiHxElZSPOwb7Yrze9cFA" target="_blank">
-                    <img src="../img/bmth-disc-kiss-of-death.png" alt="bmth-kiss-of-death"></a>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://open.spotify.com/album/7tcd0KU4YjcAT9jaP8ebs6?si=LIPz9EOuRRq3uU6c-45lsQ" target="_blank">
+                                <img src="../img/bmth-disc-bad-life.jpg" class="d-block w-100" alt="bmth-bad-life"></a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/74K2vGYMdCCO29n4s4Y41h?si=Pz9gvDWFQ3WFm12z51VaGw" target="_blank">
+                                <img src="../img/bmth-disc-fallout.jpg" class="d-block w-100" alt="bmth-fallout"></a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/6YaoDGq5SqvjU4D9oMFj2d?si=ngz-8wYaSemjuTvG4eglEg" target="_blank">
+                                <img src="../img/bmth-disc-bad-habits.jpg" class="d-block w-100" alt="bmth-bad-habits"></a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/5BPAG0wIJVwNpqSqOQ6P6H?si=JNKX57anQmyxZwfDiWw97Q" target="_blank">
+                                <img src="../img/bmth-disc-die4u-six impala.jpg" class="d-block w-100" alt="bmth-die4u-six-impala"></a>
+                        </div>
         
-                <a href="https://open.spotify.com/album/0diNd1xPp5eiaugv9HRpYb?si=DP4qEBdCQhyybdTrMn3KxA" target="_blank">
-                    <img src="../img/bmth-disc-hellraiser-part-ii.jpg" alt="bmth-hellraiser-part-ii"></a>
-                    
-                <a href="https://open.spotify.com/album/0VVYMxNznX0GKHqXNxptg6?si=bijGSSJYTcWYkkkNtOtRUA" target="_blank">
-                    <img src="../img/bmth-disc-find-your-line.jpg" alt="bmth-find-your-line"></a>
-                    
-                <a href="https://open.spotify.com/album/7kAxJWvGXcU2zebMMvaxFp?si=-OGfkoKbRGK5BZKoj1wmoA" target="_blank">
-                    <img src="../img/bmth-disc-the-atlas.jpg" alt="bmth-the-atlas"></a>
-                    
-                <a href="https://open.spotify.com/album/3VaAnJQNfZWwkfZELXNqgH?si=X0Q8zW2ZRUKKaHzmtYh-YA" target="_blank">
-                    <img src="../img/bmth-disc-episodes.jpg" alt="bmth-episodes"></a>
-                    
-                <a href="https://open.spotify.com/album/67hVRXYD2WmD4fgPOWNex3?si=nN-hzD8TQVqBqSPCYd3cdw" target="_blank">
-                    <img src="../img/bmth-disc-death-stranding.jpg" alt="bmth-death-stranding"></a>
-            </div>
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/0ZjZyPw9pHhOahynV7tSaW?si=7UQLf6gET-muzefQSq0Bmg" target="_blank">
+                                <img src="../img/bmth-disc-vampir.jpg" class="d-block w-100" alt="bmth-vampir"></a>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/41xx4p0Q1MhE2Bnfkeo6b0?si=UQdukSb0QhWkYobsPkXVlg" target="_blank">
+                                <img src="../img/bmth-disc-lets-get-the-party-started.jpg" class="d-block w-100" alt="bmth-lets-get-the-party-started"></a>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/4L4TlrXB94790rqWBprweP?si=siRuNUGfTHSPOCuzYxQv5A" target="_blank">
+                                <img src="../img/bmth-disc-die4u.jpg" class="d-block w-100" alt="bmth-die4u"></a>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/5T2HtXj1rvReE0gAAMNx53?si=wG6_d6pVQb28WbJyEgSGvA" target="_blank">
+                                <img src="../img/bmth-disc-no-more-friends.jpg" class="d-block w-100" alt="bmth-no-more-friends"></a>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/1NoegGXKwW97ZQB9ctl2Tw?si=_Emj0TpJSSqE-v1FQwtruQ" target="_blank">
+                                <img src="../img/bmth-disc-cyfmh-remix.jpg" class="d-block w-100" alt="bmth-cyfmh-remix"></a>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/4U4nKoTy4lsQlUoaGqg8U4?si=ADIAs15MTiGYetE0Wy9nCQ" target="_blank">
+                                <img src="../img/bmth-disc-teardrops.jpg" class="d-block w-100" alt="bmth-teardrops"></a>
+                        </div>
                 
-        </section>
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/5J7qci2JWfVtHdnhzCupbJ?si=H_cXQJEeThKzdY9WLT8-Fg" target="_blank">
+                                <img src="../img/bmth-disc-obey.jpg" class="d-block w-100" alt="bmth-obey"></a>
+                        </div>
+                
+                        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/5PMPY8a70DCHnQic13XueL?si=KR6XsxbPRqqYytR82yuG0A" target="_blank">
+                                <img src="../img/bmth-disc-parasite-eve.jpg" class="d-block w-100" alt="bmth-parasite-eve"></a>
+                        </div>
+                
+                        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/4IojpVltvdlDvlQ6uC6iVW?si=SskgwMt5RmG5RGO5Ux_o0Q" target="_blank">
+                                <img src="../img/bmth-disc-ludens.jpg" class="d-block w-100" alt="bmth-ludens"></a>
+                        </div>
+                
+                        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/2442fVHcs5gEuDXgRHespx?si=pG0n8-cvR9-S1AWkYsWWBg" target="_blank">
+                                <img src="../img/bmth-disc-sugar-honey-ice-and-tea-edit.jpg" class="d-block w-100" alt="bmth-sugar-honey-ice-and-tea-edit"></a>
+                        </div>
+                
+                        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/32iqkyCIOKogzuExLw1WTQ?si=BO_KrbUSTa2RBvUImY5SNg" target="_blank">
+                                <img src="../img/bmth-disc-spotify-singles.jpg" class="d-block w-100" alt="bmth-spotify-singles"></a>
+                        </div>
+                
+                        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/5r53iZXWegi3syD5tzRAml?si=cDKq7VH-T42rxL7BKXMuoQ" target="_blank">
+                                <img src="../img/bmth-disc-mother-tongue-sub-focus.jpg" class="d-block w-100" alt="bmth-mother-tongue-sub-focus"></a>
+                        </div>
+                
+                        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/1Dmf5LOn4FqRfXgEmtCHOU?si=6f0Cv0JxQ7u_5N8_T5ZKPw" target="_blank">
+                                <img src="../img/bmth-disc-nihilist-blue.jpg" class="d-block w-100" alt="bmth-nihilist-blue"></a>
+                        </div>
+                
+                        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/4sww0AHv77ypz8Xs1GAsgO?si=LfZOwvwlQVmNIu_dug9NLw" target="_blank">
+                                <img src="../img/bmth-disc-mother-tongue.jpg" class="d-block w-100" alt="bmth-mother-tongue"></a>
+                        </div>
+                
+                        
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/1KGKzyp51fVDw8VsM73tGu?si=K-0zgG5IRdaG_DTlQgNtBg" target="_blank">
+                                <img src="../img/bmth-disc-medicine.jpg" class="d-block w-100" alt="bmth-medicine"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/1uunFc8ZPthd7kFXaf393T?si=JinRH7FbToaJu9NpA82szw" target="_blank">
+                                <img src="../img/bmth-disc-wonderful-life.jpg" class="d-block w-100" alt="bmth-wonderful-life"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/5V4SjUDKVzGxIJDxIHfOZ3?si=wSgcMxUDTzulFnP-hhSp8w" target="_blank">
+                                <img src="../img/bmth-disc-mantra.jpg" class="d-block w-100" alt="bmth-mantra"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/4BfKAngRHKBRsg1XmEfM35?si=uSq0gWptRQG9sVB89pVBtA" target="_blank">
+                                <img src="../img/bmth-disc-oh-no-radio-edit.jpg" class="d-block w-100" alt="bmth-oh-no-radio-edit"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/2HjtGG1LVyrN8yrNmt78Py?si=6naJNQpLT7uz1x2-Himy2Q" target="_blank">
+                                <img src="../img/bmth-disc-drown-live-from-maida-vale.jpg" class="d-block w-100" alt="bmth-drown-live-from-maida-vale"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/7FCyRfif61F6ZCwOC14Rwi?si=hYW585KVRkeNtyW_EyTRBg" target="_blank">
+                                <img src="../img/bmth-disc-drown.jpg" class="d-block w-100" alt="bmth-drown"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/6eEJ5N9lf9ajwr5LBprfuD?si=gvbYF5FFTRSFPY2XF6hNag" target="_blank">
+                                <img src="../img/bmth-disc-this-is-what.jpg" class="d-block w-100" alt="bmth-this-is-what"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/1C4aOSd7ekrK5BBcatimCN?si=6JCmmjz3TsWZJvdBm9Ygww" target="_blank">
+                                <img src="../img/bmth-disc-cyfmh.jpg" class="d-block w-100" alt="bmth-cyfmh"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/0x5yvzhPUm2b3yQYzPPZrZ?si=-2iz3sEFTPaniDo_lJ8LLw" target="_blank">
+                                <img src="../img/bmth-disc-sleepwalking.jpg" class="d-block w-100" alt="bmth-sleepwalking"></a>
+                        </div>
+                
+                        <div class="carousel-item">
+                            <a href="https://open.spotify.com/album/2DokI5ekvgSs7eXwrbuXUo?si=hmG1-TSgT5GUbMRHXQcBaA" target="_blank">
+                                <img src="../img/bmth-disc-shadow-moses.jpg" class="d-block w-100" alt="bmth-shadow-moses"></a>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+
+        </div>
+
+        <br> <hr>
+
+        <div class="albumsLive">
+            <div  class="titleLive">
+                <h3>ALBÚMNES EN VIVO</h3>
+            </div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://open.spotify.com/album/5dH7StOKoPnNEbWh86MwFz?si=sAspWozIRwG9IXHpg4GRBg" target="_blank">
+                            <img src="../img/bmth-disc-live-at-the-royal-albert-hall.jpg"  class="d-block w-100" alt="bmth-live-at-the-royal-albert-hall"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     
     <hr>
     
     <footer id="footer">
 
-        <div class="quotes">
-            <p> "Can you hear the silence? Can you see the dark? Can you fix the broken? Can you feel, can you feel my heart?" </p>
+        <div class="footerLogo">
+            <a href="../index.html"><img src="../img/logo-bmth.jpg" alt="bmth-render"></a>
+        </div>
+
+        <br>
+
+        <div class="history">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet quasi atque accusantium doloribus tempora assumenda at temporibus suscipit? Fuga sed fugit commodi! Molestias quos autem, ullam in quo perspiciatis? Nihil dolorum amet sint cumque blanditiis aliquid atque porro optio?</p>
         </div>
 
         <br>
 
         <div class="links">
             
-            <a href="https://www.facebook.com/bmthofficial" target="_blank">
-                <img src="../img/icon-facebook.png" alt="facebook-icon" width="25">
-            </a>
+            <div>
+                <a href="https://www.facebook.com/bmthofficial" target="_blank">
+                    <img src="../img/icon-facebook.png" alt="facebook-icon" width="25">
+                </a>
+            </div>
 
-            <a href="https://www.instagram.com/bmthofficial" target="_blank">
-                <img src="../img/icon-instagram.png" alt="instagram-icon" width="25">
-            </a>
+            <div>
+                <a href="https://www.instagram.com/bmthofficial" target="_blank">
+                    <img src="../img/icon-instagram.png" alt="instagram-icon" width="25">
+                </a>
+            </div>
 
-            <a href="https://www.youtube.com/channel/UCAayZDDj3uom0QpSJiwLoUw" target="_blank">
-                <img src="../img/icon-youtube.png" alt="youtube-icon" width="25">
-            </a>
+            <div>
+                <a href="https://www.youtube.com/channel/UCAayZDDj3uom0QpSJiwLoUw" target="_blank">
+                    <img src="../img/icon-youtube.png" alt="youtube-icon" width="25">
+                </a>
+            </div>
+
         </div>
 
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 </body>
 </html>
