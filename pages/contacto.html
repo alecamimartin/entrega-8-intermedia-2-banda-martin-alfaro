@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BRING ME THE HORIZON</title>
+    <link rel="shortcut icon" href="./img/bmth-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+
+<body id="bodyContact">
+
+    <header id="header">
+
+        <div class="audio">  <!-- color lista de reproduccion -->
+            <audio controls="controls" autoplay="autoplay" loop src="../audio/bmth-parasite eve.mp3"></audio>
+        </div>
+
+        <br>
+
+        <div class="search">
+            <input type="text" placeholder="Realice su búsqueda">
+        </div>
+        
+        <br>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="galeria.html">GALERÍA</a>
+                </li>
+                <li>
+                    <a href="discografia.html">DISCOGRAFÍA</a>
+                </li>
+                <li>
+                    <a href="integrantes.html">INTEGRANTES</a>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <hr>
+
+    <div id="contactUs">
+        <h1 class="titleContacUs">CONTACTA CON NOSOTROS</h1>
+
+        <p class="descriptionContactUs">Si tienes que hacer un reporte con respecto al funcionamiento de nuestra plataforma o expresarnos algún comentario sobre nuestra razón de ser, estaríamos encantados de leerte. Por favor, haznos el gusto de saber con la ayuda del siguiente formulario. </p>
+    </div>
+    
+    <br>
+
+    <div id="boxForm">
+        <form action="enviar.php" method="get" enctype="text/plain" class="form">
+
+            <div class="formName">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <br>
+
+            <div class="formEmail">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Ingrese su Email" required>
+            </div>
+
+            <p>Selecciona desde donde nos escribes
+                <div class="formCountry">
+                    <select name="pais">
+                        <option value="1">Latinoamérica del Sur</option>
+                        <option value="2">Latinoamérica del Norte</option>
+                        <option value="3">Norteamérica</option>
+                        <option value="4">Europa</option>
+                        <option value="5">Asia</option>
+                        <option value="6">Oceanía</option>
+                        <option value="7">Brasil</option>
+                    </select>
+                </div>
+            </p>
+
+            <br>
+
+            <div class="formCommentary">
+                <textarea name="consulta-comentarios" id="consulta-comentarios" cols="50" rows="10" placeholder="Por favor, escriba su consulta o comentario." required></textarea>
+            </div>
+
+            <br>
+
+            <div class="formNews">
+                <label for="news">¿Desea recibir las últimas noticias sobre nuestro contenido y demás?</label>
+                <input type="checkbox" id="news" >
+            </div>
+
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo">
+
+        </form>
+    </div>
+
+    <hr>
+
+    <footer id="footer">
+
+        <div class="quotes">
+            <p> "Can you hear the silence? Can you see the dark? Can you fix the broken? Can you feel, can you feel my heart?" </p>
+        </div>
+
+        <br>
+
+        <div class="links">
+            
+            <a href="https://www.facebook.com/bmthofficial" target="_blank">
+                <img src="../img/icon-facebook.png" alt="facebook-icon" width="25">
+            </a>
+
+            <a href="https://www.instagram.com/bmthofficial" target="_blank">
+                <img src="../img/icon-instagram.png" alt="instagram-icon" width="25">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCAayZDDj3uom0QpSJiwLoUw" target="_blank">
+                <img src="../img/icon-youtube.png" alt="youtube-icon" width="25">
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

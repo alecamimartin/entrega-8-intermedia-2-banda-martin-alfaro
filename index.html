@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BRING ME THE HORIZON</title>
+    <link rel="shortcut icon" href="./img/icon-bmth.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body id="bodyHome">
+
+    <header id="header">
+        <div class="audio">  <!-- color lista de reproduccion -->
+            <audio controls="controls" autoplay="autoplay" loop src="./audio/bmth-parasite eve.mp3"></audio>
+        </div>
+
+        <br>
+
+        <nav class="navbar bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">BRING ME THE HORIZON</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header text-bg-dark">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENÚ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+
+                    <div class="offcanvas-body bg-danger">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/galeria.html">GALERÍA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/discografia.html">DISCOGRAFÍA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/integrantes.html">INTEGRANTES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 text-bg-light" type="search" placeholder="Realice su búsqueda" aria-label="Search">
+                        <button class="btn btn-outline-success text-bg-dark" type="submit">Buscar</button></form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="presentation">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/bmth1.jpg" class="d-block w-100" alt="bmth1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bmth2.jpg" class="d-block w-100" alt="bmth2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bmth3.jpg" class="d-block w-100" alt="bmth3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bmth4.jpg" class="d-block w-100" alt="bmth4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bmth5.jpg" class="d-block w-100" alt="bmth5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bmth6.jpg" class="d-block w-100" alt="bmth6">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <br>
+
+        <div>
+            <h1 class="nameBand"> <strong> BRING ME THE HORIZON </strong> </h1>
+            <p class="description"> <em> Fundada en Sheffield, Inglaterra en el año 2003, BRING ME THE HORIZON es una banda de rock, actualmente conformada por sus dos fundadores Oliver Sykes, el vocalista de la banda y Matt Nicholls, su baterista. Acompañados con la integración de Lee Malia, su guitarrista principal, Matt Kean, el bajista y el tecladista y vocalista de fondo, Jordan Fish. </em> </p>
+        </div>
+
+    </section>
+
+    <br>
+
+    <aside id="publicity"> <!-- colocar publicidad -->
+        <a href="" class="banner"> BANNER <img src="" alt=""></a>
+    </aside>
+
+    <br>
+
+    <section id="sectionVideos">
+        
+        <div class="miniVideos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4V1N3VBSRbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AWggPLXeOkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mfeNOJNQy0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="buttonMore">
+            <a class="btn btn-dark" href="./pages/galeria.html#galleryVideos" role="button">Ver más</a>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <footer id="footer">
+
+        <div class="footerLogo">
+            <a href="./index.html"><img src="./img/logo-bmth.jpg" alt="bmth-render"></a>
+        </div>
+
+        <br>
+
+        <div class="history">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet quasi atque accusantium doloribus tempora assumenda at temporibus suscipit? Fuga sed fugit commodi! Molestias quos autem, ullam in quo perspiciatis? Nihil dolorum amet sint cumque blanditiis aliquid atque porro optio?</p>
+        </div>
+
+        <br>
+
+        <div class="links">
+            
+            <div>
+                <a href="https://www.facebook.com/bmthofficial" target="_blank">
+                    <img src="./img/icon-facebook.png" alt="facebook-icon" width="25">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/bmthofficial" target="_blank">
+                    <img src="./img/icon-instagram.png" alt="instagram-icon" width="25">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.youtube.com/channel/UCAayZDDj3uom0QpSJiwLoUw" target="_blank">
+                    <img src="./img/icon-youtube.png" alt="youtube-icon" width="25">
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+        <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
